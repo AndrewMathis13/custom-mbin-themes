@@ -1,0 +1,57 @@
+/* TTPD-style v1.0.01 */
+/*https://github.com/AndrewMathis13/custom-mbin-themes*/
+
+:root {
+    --color-bg: #EDECE9;
+    --color-fg: #7C7269;
+    --svg-recolor: invert(49%) sepia(3%) saturate(1287%) hue-rotate(347deg) brightness(90%) contrast(87%);
+    --kbin-options-link-color: var(--color-fg);
+}
+
+#middle {
+    background-color: var(--color-bg);
+}
+
+.options {
+    background-color: var(--color-bg);
+    border: 1.5px solid var(--color-fg);
+}
+
+.section {
+    background-color: var(--color-bg);
+    border: 1.5px solid var(--color-fg);
+}
+
+.vote button {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-fg);
+}
+
+.dropdown__menu {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-fg);
+}
+
+#sidebar h3, #sidebar h5, .sidebar-subscriptions h3, .sidebar-subscriptions h5 {
+    color: var(--color-fg);
+}
+
+.options>* a, .options>* button {
+    color: var(--color-fg);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-bg: #EDECE9;
+        --color-fg: #7C7269;
+        --svg-recolor: invert(49%) sepia(3%) saturate(1287%) hue-rotate(347deg) brightness(90%) contrast(87%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #050406;
+        --color-fg: #9D948B;
+        --svg-recolor: invert(66%) sepia(8%) saturate(410%) hue-rotate(349deg) brightness(89%) contrast(88%);
+    }
+}

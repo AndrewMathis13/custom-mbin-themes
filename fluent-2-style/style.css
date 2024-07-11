@@ -1,0 +1,82 @@
+/*v1.0.01*/
+
+:root {
+    --backgroundImageSolidGradient: radial-gradient(120% 150% at 20% 10%, #F1F7FA 0%, #EAF0F3 50%, #FCF8FF 100%);
+    --colorBackgroundSolidGradientFallback: #F1F6F9;
+    --color-neutral-0: hsl(0, 0%, 100%);
+    --card-panel-background-color: var(--color-neutral-0);
+    --card-box-shadow-x-small: 0 1px 2px hsl(240 3.8% 46.1% / 6%);
+    --color-gray-200: hsl(240 5.9% 90%);
+    --border-color: var(--color-gray-200);
+    --button-surface-background-color: rgba(255, 255, 255, 0.698);
+    --button-surface-border: hsl(240 4.9% 83.9%);
+    --neutral-text-input-rest: #ffffff;
+    --text-imput-rest-border: #D1D1D1;
+}
+
+#middle {
+    background-image: var(--backgroundImageSolidGradient);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.options {
+    background-color: var(--card-panel-background-color);
+    border: 1.5px solid var(--border-color);
+    box-shadow: var(--card-box-shadow-x-small);
+}
+
+.section {
+    background-color: var(--card-panel-background-color);
+    border: 1.5px solid var(--border-color);
+    box-shadow: var(--card-box-shadow-x-small);
+}
+
+.vote button {
+    background-color: var(--button-surface-background-color);
+    border: 0.5px solid var(--border-color);
+}
+
+.dropdown__menu {
+    background-color: var(--card-panel-background-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn__primary {
+    border: 0.5px solid var(--button-surface-border);
+}
+
+input, textarea {
+    background-color: var(--neutral-fill-input-rest);
+    border: 1.5px solid var(--text-imput-rest-border);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --backgroundImageSolidGradient: radial-gradient(120% 150% at 20% 10%, #F1F7FA 0%, #EAF0F3 50%, #FCF8FF 100%);
+        --colorBackgroundSolidGradientFallback: #F1F6F9;
+        --color-neutral-0: hsl(0, 0%, 100%);
+        --card-panel-background-color: var(--color-neutral-0);
+        --card-box-shadow-x-small: 0 1px 2px hsl(240 3.8% 46.1% / 6%);
+        --color-gray-200: hsl(240 5.9% 90%);
+        --border-color: var(--color-gray-200);
+        --button-surface-background-color: rgba(255, 255, 255, 0.698);
+        --button-surface-border: hsl(240 4.9% 83.9%);
+        --neutral-fill-input-rest: #ffffff;
+        --text-imput-rest-border: #D1D1D1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundImageSolidGradient: radial-gradient(120% 150% at 20% 10%, #181A1B 0%, #101415 50%, #131016 100%);
+        --colorBackgroundSolidGradientFallback: #141414;
+        --color-neutral-0: hsl(240 5.1% 15%);
+        --card-box-shadow-x-small: 0 1px 2px rgb(0 0 0 / 18%);
+        --color-gray-200: hsl(240 4.6% 22%);
+        --button-surface-background-color: rgba(255, 255, 255, 0.06);
+        --button-surface-border: rgba(255, 255, 255, 0.07);
+        --neutral-fill-input-rest: #1C1C1C;
+        --text-imput-rest-border: #373737;
+    }
+}

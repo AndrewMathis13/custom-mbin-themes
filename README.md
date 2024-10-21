@@ -5,8 +5,10 @@ Available themes:
 
 [Fluent 2 Theme:](https://github.com/AndrewMathis13/custom-mbin-themes/tree/main/fluent-2-style)
 
-![Screenshot_11-7-2024_191327_mbin](https://github.com/user-attachments/assets/fcf63cec-990e-408e-acaf-ae9c54314c46)
+![Screenshot_20-10-2024_19132](https://github.com/user-attachments/assets/1634ee4c-466f-4855-97ec-c69cdb0709e8)
+
+
 
 [TTPD Theme:](https://github.com/AndrewMathis13/custom-mbin-themes/tree/main/ttpd-style)
 
-![Screenshot_11-7-2024_19147_mbin](https://github.com/user-attachments/assets/fdd79b96-43cd-4c9c-aeea-fd923baefc74)
+![Screenshot_20-10-2024_203430](https://github.com/user-attachments/assets/73b8bc2b-abf4-4cce-9128-66057d2060c2)

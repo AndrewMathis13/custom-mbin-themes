@@ -1,5 +1,5 @@
-# Custom Mbin Magazine Themes
-Custom CSS themes to modify the appearance of Mbin Magazines.
+# Custom Mbin Themes
+Custom CSS themes to modify the appearance of the Mbin web client.
 
 Available themes: 
 

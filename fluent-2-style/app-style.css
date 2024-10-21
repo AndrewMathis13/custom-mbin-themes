@@ -1,0 +1,576 @@
+/* fluent-2-style v2.1.05 */
+/*https://github.com/AndrewMathis13/custom-mbin-themes*/
+
+:root {
+    /*Fluent Styles Variables*/
+
+    --backgroundImageSolidGradient: radial-gradient(120% 150% at 20% 10%, #F1F7FA 0%, #EAF0F3 50%, #FCF8FF 100%);
+    --colorBackgroundSolidGradientFallback: #F1F6F9;
+
+    /*Text*/
+    --text-primary: rgba(0, 0, 0, 0.8956);
+    --text-secondary: rgba(0, 0, 0, 0.6063);
+    --text-tertiary: rgba(0, 0, 0, 0.4458);
+    --text-disabled: rgba(0, 0, 0, 0.3614);
+    --accent-text-primary: rgba(0, 62, 146, 1);
+    --accent-text-secondary: rgba(0, 26, 104, 1);
+    --accent-text-tertiary: rgba(0, 95, 184, 1);
+    --text-on-accent-primary: rgba(255, 255, 255, 1);
+    --text-on-accent-secondary: rgba(255, 255, 255, 0.7);
+
+    /*Fill*/
+    --control-fill-default: rgba(255, 255, 255, 0.7); /*Original*/
+    --control-fill-solid-default: #FDFEFE; /*Solid*/
+    --control-fill-secondary: rgba(249, 249, 249, 0.5);
+    --control-fill-tertiary: rgba(249, 249, 249, 0.3);
+    --control-fill-transparent: rgba(255, 255, 255, 0);
+    --control-alt-fill-transparent: rgba(255, 255, 255, 0);
+    --control-alt-fill-secondary: rgba(0, 0, 0, 0.0241);
+    --control-alt-fill-tertiary: rgba(0, 0, 0, 0.0578);
+    --control-alt-fill-quarternary: rgba(0, 0, 0, 0.0924);
+
+    --subtle-fill-transparent: rgba(255, 255, 255, 0);
+    --subtle-fill-secondary: rgba(0, 0, 0, 0.0373);
+    --subtle-fill-tertiary: rgba(0, 0, 0, 0.0241);
+
+    --accent-fill-default: rgba(0, 95, 184, 1);
+    --accent-fill-secondary: rgba(0, 95, 184, 0.9);
+    --accent-fill-tertiary: rgba(0, 95, 184, 0.8);
+
+    /*Stroke*/
+    --control-stroke-default: rgba(0, 0, 0, 0.0578);
+    --control-stroke-secondary: rgba(0, 0, 0, 0.1622);
+    --control-stroke-on-accent-default: rgba(255, 255, 255, 0.08);
+    --control-stroke-on-accent-secondary: rgba(0, 0, 0, 0.4);
+
+    --card-stroke-default: rgba(0, 0, 0, 0.0578);
+    --card-stroke-default-solid: rgba(235, 235, 235, 1);
+
+    --control-strong-stroke-default: rgba(0, 0, 0, 0.6063);
+    --control-strong-stroke-disabled: rgba(0, 0, 0, 0.2169);
+
+    --surface-stroke-default: rgba(117, 117, 117, 0.4);
+    --surface-stroke-flyout: rgba(0, 0, 0, 0.0578);
+
+    --divider-stroke-default: rgba(0, 0, 0, 0.0803);
+
+    /*Backgrounds*/
+    --card-background-default: rgba(255, 255, 255, 0.7);
+    --card-background-secondary: rgba(246, 246, 246, 0.5);
+
+    --layer-background-default: rgba(255, 255, 255, 0.5);
+    --layer-background-alt: rgba(255, 255, 255, 1);
+
+    --layer-on-mica-base-alt-default: rgba(255, 255, 255, 0.7);
+    --layer-on-mica-base-alt-tertiary: rgba(249, 249, 249, 1);
+
+    --solid-background-base: rgba(243, 243, 243, 1); /*Bottom most layer*/
+    --solid-background-base-alt: rgba(218, 218, 218, 1);
+    --solid-background-secondary: rgba(238, 238, 238, 1); /*Alternate base*/
+    --solid-background-tertiary: rgba(249, 249, 249, 1); /*Content layer color*/
+    
+    --solid-card-background: #F9FBFC;
+
+    /*System*/
+    --system-attention-badge: rgba(0, 95, 183, 1);
+    --system-success-badge: rgba(15, 123, 15, 1);
+    --system-caution-badge: rgba(157, 93, 0, 1);
+    --system-critical-badge: rgba(196, 43, 28, 1);
+    --system-neutral-badge: rgba(0, 0, 0, 0.4458);
+    --system-solid-neutral-badge: rgba(138, 138, 138, 1);
+    --system-attention-background: rgba(246, 246, 246, 0.5);
+    --system-success-background: rgba(223, 246, 221, 1);
+    --system-caution-background: rgba(255, 244, 206, 1);
+    --system-critical-background: rgba(253, 231, 233, 1);
+    --system-neutral-background: rgba(0, 0, 0, 0.0241);
+    --system-solid-neutral-background: rgba(243, 243, 243, 1);
+    --system-solid-attention-backgroun: rgba(247, 247, 247, 1);
+
+    /*Shell*/
+    --keyboard-button-fill-default: rgba(255, 255, 255, 1);
+    --keyboard-button-fill-secondary: rgba(255, 255, 255, 0.75);
+    --keyboard-button-fill-tertiary: rgba(255, 255, 255, 0.5);
+    --keyboard-button-fill-disabled: rgba(255, 255, 255, 0.125);
+    --caption-close-primary: rgba(196, 43, 28, 1);
+    --caption-close-secondary: rgba(196, 43, 28, 0.9);
+
+
+    /*Mbin Variables*/
+
+    /*buttons*/
+    --kbin-button-danger-bg:  #842029;
+    --kbin-button-danger-hover-bg: #921d27;
+    --kbin-button-danger-text-color: #fff;
+    --kbin-button-danger-text-hover-color: #fff;
+    --kbin-button-danger-border: 1px dashed #842029;
+
+    /*topbar*/
+    --kbin-topbar-link-color: #fff;
+
+    /*alerts*/
+    --kbin-alert-success-bg: var(--system-success-background);
+    --kbin-alert-success-border: 1px solid var(--card-stroke-default);
+    --kbin-alert-success-text-color: #fff;
+    --kbin-alert-success-link-color: #fff;
+
+    /*Default theme variables*/
+    --kbin-body-font-size: 1rem;
+    --kbin-body-font-weight: 400;
+    --kbin-body-line-height: 1.5;
+    --kbin-body-text-align: left;
+    --kbin-body-bg: var(--colorBackgroundSolidGradientFallback);
+
+    --kbin-bg: #ecf0f1;
+    --kbin-bg-nth: #fafafa;
+
+    --kbin-text-color: var(--text-primary);
+    --kbin-link-color: var(--accent-text-primary);
+    --kbin-link-hover-color: var(--accent-text-secondary);
+    --kbin-outline: #ff8c00 solid 4px;
+
+    --kbin-primary-color: var(--accent-fill-default); /*Mbin theme color: #61366b*/
+    --kbin-text-muted-color: #95a6a6;
+
+    --kbin-success-color: #0f5132;
+    --kbin-danger-color: #842029;
+
+    --kbin-own-color: #0f5132;
+    --kbin-author-color: #842029;
+
+    /*section*/
+    --kbin-section-bg: var(--solid-card-background);
+    --kbin-section-text-color: var(--kbin-text-color);
+    --kbin-section-title-link-color: var(--text-primary);
+    --kbin-section-link-color: var(--kbin-link-color);
+    --kbin-section-link-hover-color: var(--accent-fill-default);
+    --kbin-section-border: 1px solid var(--card-stroke-default);
+    --kbin-author-border: 1px dashed var(--kbin-author-color);
+    --kbin-own-border: 1px dashed var(--kbin-own-color);
+
+    /*meta*/
+    --kbin-meta-bg: none;
+    --kbin-meta-text-color: var(--text-primary);
+    --kbin-meta-link-color: var(--text-secondary);
+    --kbin-meta-link-hover-color: var(--accent-text-primary);
+    --kbin-meta-border: 1px solid var(--control-stroke-default); /*Originally: dashed*/
+    --kbin-avatar-border: 3px solid #ecf0f1;
+    --kbin-avatar-border-active: 3px solid #d3d5d6;
+    --kbin-blockquote-color: #0f5132;
+
+    /*options*/
+    --kbin-options-bg: var(--solid-card-background);
+    --kbin-options-text-color: var(--text-primary);
+    --kbin-options-link-color: #95a5a6;
+    --kbin-options-link-hover-color: #32465b;
+    --kbin-options-border: 1px solid #e5eaec;
+    --kbin-options-link-hover-border: 3px solid var(--accent-fill-default);
+
+    /*forms*/
+    --kbin-input-bg: var(--control-fill-solid-default);
+    --kbin-input-text-color: var(--kbin-text-color);
+    --kbin-input-border: 1px solid var(--control-stroke-default);
+    --kbin-input-placeholder-text-color: var(--text-secondary);
+
+    /*buttons*/
+    --kbin-button-primary-bg: var(--accent-fill-default);
+    --kbin-button-primary-hover-bg: var(--accent-fill-secondary);
+    --kbin-button-primary-text-color: var(--text-on-accent-primary);
+    --kbin-button-primary-text-hover-color: var(--text-on-accent-secondary);
+    --kbin-button-primary-border: 1px solid var(--control-stroke-default);
+
+    --kbin-button-secondary-bg: var(--control-fill-default);
+    --kbin-button-secondary-hover-bg: var(--control-fill-secondary);
+    --kbin-button-secondary-text-color: var(--kbin-meta-text-color);
+    --kbin-button-secondary-text-hover-color: var(--text-secondary);
+    --kbin-button-secondary-border: 1px solid var(--control-stroke-default);
+
+    /*header*/
+    --kbin-header-bg: var(--solid-card-background);
+    --kbin-header-text-color: var(--text-primary);
+    --kbin-header-link-color: var(--text-primary);
+    --kbin-header-link-hover-color: var(--text-secondary);
+    --kbin-header-link-active-bg: var(--subtle-fill-secondary);
+    --kbin-header-border: 1px solid var(--card-stroke-default);
+    --kbin-header-hover-border: 3px solid var(--accent-fill-default);
+
+    /*topbar*/
+    --kbin-topbar-bg: #0a0026;
+    --kbin-topbar-active-bg: #150a37;
+    --kbin-topbar-active-link-color: #fff;
+    --kbin-topbar-hover-bg: #150a37;
+    --kbin-topbar-border: 1px solid  #150a37;
+
+    /*sidebar*/
+    --kbin-sidebar-header-text-color: #909ea2;
+    --kbin-sidebar-header-border: 1px solid var(--divider-stroke-default);
+    --kbin-sidebar-settings-row-bg: var(--layer-background-alt);
+    --kbin-sidebar-settings-switch-on-color: #fff ;
+    --kbin-sidebar-settings-switch-on-bg: var(--kbin-button-primary-bg);
+    --kbin-sidebar-settings-switch-off-color: #fff ;
+    --kbin-sidebar-settings-switch-off-bg: #b5c4c9;
+    --kbin-sidebar-settings-switch-hover-bg: #9992BC;
+
+    /*vote*/
+    --kbin-vote-bg: var(--control-fill-default);
+    --kbin-vote-text-color: #b6b6b6;
+    --kbin-vote-text-hover-color: #000;
+    --kbin-upvoted-color: #0f5132;
+    --kbin-downvoted-color: #842029;
+
+    /*boost*/
+    --kbin-boosted-color: var(--kbin-upvoted-color);
+
+    /*alerts*/
+    --kbin-alert-info-bg: var(--system-caution-background);
+    --kbin-alert-info-border: 1px solid var(--card-stroke-default);
+    --kbin-alert-info-text-color: var(--text-primary);
+    --kbin-alert-info-link-color: #997404;
+
+    --kbin-alert-danger-bg: var(--system-critical-background);
+    --kbin-alert-danger-border: 1px solid var(--card-stroke-default);
+    --kbin-alert-danger-text-color: var(--text-primary);
+    --kbin-alert-danger-link-color: var(--kbin-danger-color);
+
+    /*entry*/
+    --kbin-entry-link-visited-color: #7e8f99;
+
+    /*details*/
+    --mbin-details-border: var(--kbin-section-border);
+    --mbin-details-separator-border: var(--kbin-meta-border);
+
+    --mbin-details-detail-color: var(--kbin-link-hover-color);
+    --mbin-details-spoiler-color: var(--kbin-danger-color);
+
+    --mbin-details-detail-label: "Details";
+    --mbin-details-spoiler-label: "Spoiler";
+}
+
+/*Automatic light/dark theme mode*/
+.theme--kbin {
+    --kbin-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --kbin-body-bg: var(--colorBackgroundSolidGradientFallback);
+
+    --kbin-bg: var(--colorBackgroundSolidGradientFallback);
+    --kbin-bg-nth: #fafafa;
+
+    --kbin-text-color: var(--text-primary);
+    --kbin-link-color: var(--accent-text-primary);
+    --kbin-link-hover-color: var(--accent-text-secondary);
+    --kbin-outline: #ff8c00 solid 4px;
+
+    --kbin-primary-color: var(--accent-fill-default); /*Mbin theme color: #61366b*/
+    --kbin-text-muted-color: #95a6a6;
+
+    --kbin-success-color: #24b270;
+    --kbin-danger-color: #dc2f3f;
+
+    --kbin-own-color: #24b270;
+    --kbin-author-color: #dc2f3f;
+
+    /*section*/
+    --kbin-section-bg: var(--solid-card-background);
+    --kbin-section-text-color: var(--kbin-text-color);
+    --kbin-section-title-link-color: var(--text-primary);
+    --kbin-section-link-color: var(--kbin-link-color);
+    --kbin-section-link-hover-color: var(--accent-fill-default);
+    --kbin-section-border: 1px solid var(--card-stroke-default);
+    --kbin-author-border: 1px dashed var(--kbin-author-color);
+    --kbin-own-border: 1px dashed var(--kbin-own-color);
+
+    /*meta*/
+    --kbin-meta-bg: none;
+    --kbin-meta-text-color: var(--text-primary);
+    --kbin-meta-link-color: var(--text-secondary);
+    --kbin-meta-link-hover-color: var(--accent-text-primary);
+    --kbin-meta-border: 1px solid var(--control-stroke-default); /*Originally: dashed*/
+    --kbin-avatar-border: 3px solid #ecf0f1;
+    --kbin-avatar-border-active: 3px solid #d3d5d6;
+    --kbin-blockquote-color: #0f5132;
+
+    /*options*/
+    --kbin-options-bg: var(--solid-card-background);
+    --kbin-options-text-color: var(--text-primary);
+    --kbin-options-link-color: #95a5a6;
+    --kbin-options-link-hover-color: var(--accent-fill-default);
+    --kbin-options-border: 1px solid var(--card-stroke-default);
+    --kbin-options-link-hover-border: 3px solid var(--accent-fill-default);
+
+    /*forms*/
+    --kbin-input-bg: var(--control-fill-solid-default);
+    --kbin-input-text-color: var(--kbin-text-color);
+    --kbin-input-border: 1px solid var(--control-stroke-default);
+    --kbin-input-placeholder-text-color: var(--text-secondary);
+
+    /*buttons*/
+    --kbin-button-primary-bg: var(--accent-fill-default);
+    --kbin-button-primary-hover-bg: var(--accent-fill-secondary);
+    --kbin-button-primary-text-color: var(--text-on-accent-primary);
+    --kbin-button-primary-text-hover-color: var(--text-on-accent-secondary);
+    --kbin-button-primary-border: 1px solid var(--control-stroke-default);
+
+    --kbin-button-secondary-bg: var(--control-fill-default);
+    --kbin-button-secondary-hover-bg: var(--control-fill-secondary);
+    --kbin-button-secondary-text-color: var(--kbin-meta-text-color);
+    --kbin-button-secondary-text-hover-color: var(--text-secondary);
+    --kbin-button-secondary-border: 1px solid var(--control-stroke-default);
+
+    /*header*/
+    --kbin-header-bg: var(--solid-card-background);
+    --kbin-header-text-color: var(--text-primary);
+    --kbin-header-link-color: var(--text-primary);
+    --kbin-header-link-hover-color: var(--text-secondary);
+    --kbin-header-link-active-bg: var(--subtle-fill-secondary);
+    --kbin-header-border: 1px solid var(--card-stroke-default);
+    --kbin-header-hover-border: 3px solid var(--accent-fill-default);
+
+    /*topbar*/
+    --kbin-topbar-bg: var(--kbin-section-bg);
+    --kbin-topbar-active-bg: #fff;
+    --kbin-topbar-active-link-color: #000;
+    --kbin-topbar-hover-bg: #282828;
+    --kbin-topbar-border: 1px solid #4d5052;
+
+    /*sidebar*/
+    --kbin-sidebar-header-text-color: #909ea2;
+    --kbin-sidebar-header-border: 1px solid var(--divider-stroke-default);
+    --kbin-sidebar-settings-row-bg: var(--layer-background-alt);
+    --kbin-sidebar-settings-switch-on-color: #fff ;
+    --kbin-sidebar-settings-switch-on-bg: var(--kbin-button-primary-bg);
+    --kbin-sidebar-settings-switch-off-color: #fff ;
+    --kbin-sidebar-settings-switch-off-bg: #b5c4c9;
+    --kbin-sidebar-settings-switch-hover-bg: #9992BC;
+
+    /*vote*/
+    --kbin-vote-bg: var(--control-fill-default);
+    --kbin-vote-text-color: #B6BAC2;
+    --kbin-vote-text-hover-color: #fafafa;
+    --kbin-upvoted-color: #24b270;
+    --kbin-downvoted-color: #dc2f3f;
+
+    /*boost*/
+    --kbin-boosted-color: var(--kbin-upvoted-color);
+
+    /*alerts*/
+    --kbin-alert-info-bg: var(--system-caution-background);
+    --kbin-alert-info-border: 1px solid var(--card-stroke-default);
+    --kbin-alert-info-text-color: var(--text-primary);
+    --kbin-alert-info-link-color: #997404;
+
+    --kbin-alert-danger-bg: var(--system-critical-background);
+    --kbin-alert-danger-border: 1px solid var(--card-stroke-default);
+    --kbin-alert-danger-text-color: var(--text-primary);
+    --kbin-alert-danger-link-color: var(--kbin-danger-color);
+
+    /*entry*/
+    --kbin-entry-link-visited-color: #8e939b;
+
+    /*details*/
+    --mbin-details-border: var(--kbin-section-border);
+    --mbin-details-separator-border: var(--kbin-meta-border);
+
+    --mbin-details-detail-color: var(--kbin-link-hover-color);
+    --mbin-details-spoiler-color: var(--kbin-danger-color);
+
+    .section--top,
+    .options--top {
+        border-top: var(--kbin-options-border) !important;
+        margin-top: .5rem !important;
+    }
+
+    &.rounded-edges {
+        .options--top,
+        .section--top {
+            border-radius: .5rem !important;
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /*Fluent Styles Variables*/
+        --backgroundImageSolidGradient: radial-gradient(120% 150% at 20% 10%, #F1F7FA 0%, #EAF0F3 50%, #FCF8FF 100%);
+        --colorBackgroundSolidGradientFallback: #F1F6F9;
+
+        /*Text*/
+        --text-primary: rgba(0, 0, 0, 0.8956);
+        --text-secondary: rgba(0, 0, 0, 0.6063);
+        --text-tertiary: rgba(0, 0, 0, 0.4458);
+        --text-disabled: rgba(0, 0, 0, 0.3614);
+        --accent-text-primary: rgba(0, 62, 146, 1);
+        --accent-text-secondary: rgba(0, 26, 104, 1);
+        --accent-text-tertiary: rgba(0, 95, 184, 1);
+        --text-on-accent-primary: rgba(255, 255, 255, 1);
+        --text-on-accent-secondary: rgba(255, 255, 255, 0.7);
+
+        /*Fill*/
+        --control-fill-default: rgba(255, 255, 255, 0.7); /*Original*/
+        --control-fill-solid-default: #FDFEFE; /*Solid*/
+        --control-fill-secondary: rgba(249, 249, 249, 0.5);
+        --control-fill-tertiary: rgba(249, 249, 249, 0.3);
+        --control-fill-transparent: rgba(255, 255, 255, 0);
+        --control-alt-fill-transparent: rgba(255, 255, 255, 0);
+        --control-alt-fill-secondary: rgba(0, 0, 0, 0.0241);
+        --control-alt-fill-tertiary: rgba(0, 0, 0, 0.0578);
+        --control-alt-fill-quarternary: rgba(0, 0, 0, 0.0924);
+
+        --subtle-fill-transparent: rgba(255, 255, 255, 0);
+        --subtle-fill-secondary: rgba(0, 0, 0, 0.0373);
+        --subtle-fill-tertiary: rgba(0, 0, 0, 0.0241);
+
+        --accent-fill-default: rgba(0, 95, 184, 1);
+        --accent-fill-secondary: rgba(0, 95, 184, 0.9);
+        --accent-fill-tertiary: rgba(0, 95, 184, 0.8);
+
+        /*Stroke*/
+        --control-stroke-default: rgba(0, 0, 0, 0.0578);
+        --control-stroke-secondary: rgba(0, 0, 0, 0.1622);
+        --control-stroke-on-accent-default: rgba(255, 255, 255, 0.08);
+        --control-stroke-on-accent-secondary: rgba(0, 0, 0, 0.4);
+
+        --card-stroke-default: rgba(0, 0, 0, 0.0578);
+        --card-stroke-default-solid: rgba(235, 235, 235, 1);
+
+        --control-strong-stroke-default: rgba(0, 0, 0, 0.6063);
+        --control-strong-stroke-disabled: rgba(0, 0, 0, 0.2169);
+
+        --surface-stroke-default: rgba(117, 117, 117, 0.4);
+        --surface-stroke-flyout: rgba(0, 0, 0, 0.0578);
+
+        --divider-stroke-default: rgba(0, 0, 0, 0.0803);
+
+        /*Backgrounds*/
+        --card-background-default: rgba(255, 255, 255, 0.7);
+        --card-background-secondary: rgba(246, 246, 246, 0.5);
+
+        --layer-background-default: rgba(255, 255, 255, 0.5);
+        --layer-background-alt: rgba(255, 255, 255, 1);
+
+        --layer-on-mica-base-alt-default: rgba(255, 255, 255, 0.7);
+        --layer-on-mica-base-alt-tertiary: rgba(249, 249, 249, 1);
+
+        --solid-background-base: rgba(243, 243, 243, 1); /*Bottom most layer*/
+        --solid-background-base-alt: rgba(218, 218, 218, 1);
+        --solid-background-secondary: rgba(238, 238, 238, 1); /*Alternate base*/
+        --solid-background-tertiary: rgba(249, 249, 249, 1); /*Content layer color*/
+    
+        --solid-card-background: #F9FBFC;
+
+        /*System*/
+        --system-attention-badge: rgba(0, 95, 183, 1);
+        --system-success-badge: rgba(15, 123, 15, 1);
+        --system-caution-badge: rgba(157, 93, 0, 1);
+        --system-critical-badge: rgba(196, 43, 28, 1);
+        --system-neutral-badge: rgba(0, 0, 0, 0.4458);
+        --system-solid-neutral-badge: rgba(138, 138, 138, 1);
+        --system-attention-background: rgba(246, 246, 246, 0.5);
+        --system-success-background: rgba(223, 246, 221, 1);
+        --system-caution-background: rgba(255, 244, 206, 1);
+        --system-critical-background: rgba(253, 231, 233, 1);
+        --system-neutral-background: rgba(0, 0, 0, 0.0241);
+        --system-solid-neutral-background: rgba(243, 243, 243, 1);
+        --system-solid-attention-backgroun: rgba(247, 247, 247, 1);
+
+        /*Shell*/
+        --keyboard-button-fill-default: rgba(255, 255, 255, 1);
+        --keyboard-button-fill-secondary: rgba(255, 255, 255, 0.75);
+        --keyboard-button-fill-tertiary: rgba(255, 255, 255, 0.5);
+        --keyboard-button-fill-disabled: rgba(255, 255, 255, 0.125);
+        --caption-close-primary: rgba(196, 43, 28, 1);
+        --caption-close-secondary: rgba(196, 43, 28, 0.9);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /*Fluent Styles Variables*/
+        --backgroundImageSolidGradient: radial-gradient(120% 150% at 20% 10%, #181A1B 0%, #101415 50%, #131016 100%);
+        --colorBackgroundSolidGradientFallback: #141414;
+
+        /*Text*/
+        --text-primary: rgba(255, 255, 255, 1);
+        --text-secondary: rgba(255, 255, 255, 0.786);
+        --text-tertiary: rgba(255, 255, 255, 0.5442);
+        --text-disabled: rgba(255, 255, 255, 0.3628);
+        --accent-text-primary: rgba(153, 235, 255, 1);
+        --accent-text-secondary: rgba(153, 235, 255, 1);
+        --accent-text-tertiary: rgba(96, 205, 255, 1);
+        --text-on-accent-primary: rgba(0, 0, 0, 1);
+        --text-on-accent-secondary: rgba(0, 0, 0, 0.5);
+
+        /*Fill*/
+        --control-fill-default: rgba(255, 255, 255, 0.0605);
+        --control-fill-solid-default: #272B2C; /*Solid*/
+        --control-fill-secondary: rgba(255, 255, 255, 0.0837);
+        --control-fill-tertiary: rgba(255, 255, 255, 0.0326);
+        --control-fill-transparent: rgba(255, 255, 255, 0);
+        --control-alt-fill-transparent: rgba(255, 255, 255, 0);
+        --control-alt-fill-secondary: rgba(0, 0, 0, 0.1);
+        --control-alt-fill-tertiary: rgba(255, 255, 255, 0.0419);
+        --control-alt-fill-quarternary: rgba(255, 255, 255, 0.0698);
+
+        --subtle-fill-transparent: rgba(255, 255, 255, 0);
+        --subtle-fill-secondary: rgba(255, 255, 255, 0.0605);
+        --subtle-fill-tertiary: rgba(255, 255, 255, 0.0419);
+
+        --accent-fill-default: rgba(96, 205, 255, 1);
+        --accent-fill-secondary: rgba(96, 205, 255, 0.9);
+        --accent-fill-tertiary: rgba(96, 205, 255, 0.8);
+
+        /*Stroke*/
+        --control-stroke-default: rgba(255, 255, 255, 0.0698);
+        --control-stroke-secondary: rgba(255, 255, 255, 0.093);
+        --control-stroke-on-accent-default: rgba(255, 255, 255, 0.08);
+        --control-stroke-on-accent-secondary: rgba(0, 0, 0, 0.14);
+
+        --card-stroke-default: rgba(0, 0, 0, 0.1);
+        --card-stroke-default-solid: rgba(28, 28, 28, 1);
+
+        --control-strong-stroke-default: rgba(255, 255, 255, 0.6047);
+        --control-strong-stroke-disabled: rgba(255, 255, 255, 0.1581);
+
+        --surface-stroke-default: rgba(117, 117, 117, 0.4);
+        --surface-stroke-flyout: rgba(0, 0, 0, 0.2);
+
+        --divider-stroke-default: rgba(255, 255, 255, 0.0837);
+
+        /*Backgrounds*/
+        --card-background-default: rgba(255, 255, 255, 0.0512);
+        --card-background-secondary: rgba(255, 255, 255, 0.0326);
+
+        --layer-background-default: rgba(58, 58, 58, 0.3);
+        --layer-background-alt: rgba(255, 255, 255, 0.0538);
+
+        --layer-on-mica-base-alt-default: rgba(58, 58, 58, 0.45);
+        --layer-on-mica-base-alt-tertiary: rgba(44, 44, 44, 1);
+
+        --solid-background-base: rgba(32, 32, 32, 1); /*Bottom most layer*/
+        --solid-background-base-alt: rgba(10, 10, 10, 1);
+        --solid-background-secondary: rgba(28, 28, 28, 1); /*Alternate base*/
+        --solid-background-tertiary: rgba(40, 40, 40, 1); /*Content layer color*/
+    
+        --solid-card-background: #1D2122;
+
+        /*System*/
+        --system-attention-badge: rgba(96, 205, 255, 1);
+        --system-success-badge: rgba(108, 203, 95, 1);
+        --system-caution-badge: rgba(252, 225, 0, 1);
+        --system-critical-badge: rgba(255, 153, 164, 1);
+        --system-neutral-badge: rgba(255, 255, 255, 0.5442);
+        --system-solid-neutral-badge: rgba(138, 138, 138, 1);
+        --system-attention-background: rgba(255, 255, 255, 0.0326);
+        --system-success-background: rgba(57, 61, 27, 1);
+        --system-caution-background: rgba(67, 53, 25, 1);
+        --system-critical-background: rgba(68, 39, 38, 1);
+        --system-neutral-background: rgba(255, 255, 255, 0.0326);
+        --system-solid-neutral-background: rgba(46, 46, 46, 1);
+        --system-solid-attention-backgroun: rgba(46, 46, 46, 1);
+
+        /*Shell*/
+        --keyboard-button-fill-default: rgba(255, 255, 255, 0.1256);
+        --keyboard-button-fill-secondary: rgba(255, 255, 255, 0.0852);
+        --keyboard-button-fill-tertiary: rgba(255, 255, 255, 0.0673);
+        --keyboard-button-fill-disabled: rgba(255, 255, 255, 0.0359);
+        --caption-close-primary: rgba(196, 43, 28, 1);
+        --caption-close-secondary: rgba(196, 43, 28, 0.9);
+    }
+}

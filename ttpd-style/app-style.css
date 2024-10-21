@@ -1,0 +1,315 @@
+/* TTPD-style v1.5.01 */
+/*https://github.com/AndrewMathis13/custom-mbin-themes*/
+
+:root {
+    /*TTPD Theme Styles Variables*/
+    --accent-color-main: rgba(124, 114, 105, 1);
+    --accent-color-secondary: rgba(124, 114, 105, 0.9);
+    --accent-background: rgba(237, 236, 233, 1);
+    --accent-text-hover: rgba(98, 85, 72, 1);
+    --accent-background-secondary: rgba(237, 236, 233, 0.9);
+    --button-surface-cover: rgba(98, 85, 72, 0.2);
+
+    /*Text*/
+    --text-primary: rgba(0, 0, 0, 0.8956);
+    --text-secondary: rgba(0, 0, 0, 0.6063);
+    --text-on-accent-primary: rgba(255, 255, 255, 1);
+    --text-on-accent-secondary: rgba(255, 255, 255, 0.7);
+
+    /*Mbin Variables*/
+
+    /*danger buttons*/
+    --kbin-button-danger-bg:  #842029;
+    --kbin-button-danger-hover-bg: #921d27;
+    --kbin-button-danger-text-color: #fff;
+    --kbin-button-danger-text-hover-color: #fff;
+    --kbin-button-danger-border: 1px dashed #842029;
+
+    /*alerts*/
+    --kbin-alert-success-bg: var(--kbin-success-color);
+    --kbin-alert-success-border: 1px solid var(--kbin-success-color);
+    --kbin-alert-success-text-color: #fff;
+    --kbin-alert-success-link-color: #fff;
+
+    /*Default theme variables*/
+    --kbin-body-bg: var(--accent-background);
+
+    --kbin-bg: var(--accent-background);
+    --kbin-bg-nth: var(--accent-background);
+
+    --kbin-text-color: var(--text-primary);
+    --kbin-link-color: var(--text-themed);
+    --kbin-link-hover-color: #275878;
+    --kbin-outline: #ff8c00 solid 4px;
+
+    --kbin-primary-color: var(--accent-color-main);
+    --kbin-text-muted-color: #95a6a6;
+
+    --kbin-success-color: #0f5132;
+    --kbin-danger-color: #842029;
+
+    --kbin-own-color: #0f5132;
+    --kbin-author-color: #842029;
+
+    /*section*/
+    --kbin-section-bg: var(--accent-background);
+    --kbin-section-text-color: var(--kbin-text-color);
+    --kbin-section-title-link-color: var(--text-primary);
+    --kbin-section-link-color: var(--kbin-link-color);
+    --kbin-section-link-hover-color: var(--kbin-link-hover-color);
+    --kbin-section-border: 1px solid var(--accent-color-main);
+    --kbin-author-border: 1px dashed var(--kbin-author-color);
+    --kbin-own-border: 1px dashed var(--kbin-own-color);
+
+    /*meta*/
+    --kbin-meta-bg: none;
+    --kbin-meta-text-color: var(--text-primary);
+    --kbin-meta-link-color: var(--accent-color-main);
+    --kbin-meta-link-hover-color: var(--accent-text-hover);
+    --kbin-meta-border: 1px solid var(--accent-color-main); /*Originally: dashed*/
+    --kbin-avatar-border: 3px solid #ecf0f1;
+    --kbin-avatar-border-active: 3px solid #d3d5d6;
+    --kbin-blockquote-color: #0f5132;
+
+    /*options*/
+    --kbin-options-bg: var(--accent-background);
+    --kbin-options-text-color: var(--text-primary);
+    --kbin-options-link-color: var(--accent-color-main);
+    --kbin-options-link-hover-color: var(--accent-text-hover);
+    --kbin-options-border: 1px solid var(--accent-color-main);
+    --kbin-options-link-hover-border: 3px solid var(--accent-color-main);
+
+    /*forms*/
+    --kbin-input-bg: var(--accent-background);
+    --kbin-input-text-color: var(--kbin-text-color);
+    --kbin-input-border: 1px solid var(--accent-color-main);
+    --kbin-input-placeholder-text-color: var(--text-secondary);
+
+    /*buttons*/
+    --kbin-button-primary-bg: var(--accent-background);
+    --kbin-button-primary-hover-bg: var(--button-surface-cover);
+    --kbin-button-primary-text-color: var(--accent-color-main);
+    --kbin-button-primary-text-hover-color: var(--accent-text-hover);
+    --kbin-button-primary-border: 1px solid var(--accent-color-main);
+
+    --kbin-button-secondary-bg: var(--accent-background);
+    --kbin-button-secondary-hover-bg: var(--button-surface-cover);
+    --kbin-button-secondary-text-color: var(--kbin-meta-text-color);
+    --kbin-button-secondary-text-hover-color: var(--text-secondary);
+    --kbin-button-secondary-border: 1px solid var(--accent-color-main);
+
+    /*header*/
+    --kbin-header-bg: var(--accent-background);
+    --kbin-header-text-color: var(--accent-color-main);
+    --kbin-header-link-color: var(--accent-color-main);
+    --kbin-header-link-hover-color: var(--accent-text-hover);
+    --kbin-header-link-active-bg: var(--accent-background);
+    --kbin-header-border: 1px solid var(--accent-color-main);
+    --kbin-header-hover-border: 3px solid var(--accent-color-main);
+
+    /*sidebar*/
+    --kbin-sidebar-header-text-color: var(--accent-color-main);
+    --kbin-sidebar-header-border: 1px solid var(--accent-color-main);
+    --kbin-sidebar-settings-row-bg: var(--accent-background);
+    --kbin-sidebar-settings-switch-on-color: #fff ;
+    --kbin-sidebar-settings-switch-on-bg: var(--kbin-button-primary-bg);
+    --kbin-sidebar-settings-switch-off-color: #fff ;
+    --kbin-sidebar-settings-switch-off-bg: #b5c4c9;
+    --kbin-sidebar-settings-switch-hover-bg: #9992BC;
+
+    /*vote*/
+    --kbin-vote-bg: var(--accent-background);
+    --kbin-vote-text-color: var(--accent-color-main);
+    --kbin-vote-text-hover-color: var(--accent-text-hover);
+    --kbin-upvoted-color: #0f5132;
+    --kbin-downvoted-color: #842029;
+
+    /*boost*/
+    --kbin-boosted-color: var(--kbin-upvoted-color);
+
+    /*alerts*/
+    --kbin-alert-info-bg: #fff3cd;
+    --kbin-alert-info-border: 1px solid #ffe69c;
+    --kbin-alert-info-text-color: #997404;
+    --kbin-alert-info-link-color: #997404;
+
+    --kbin-alert-danger-bg: #f8d7da;
+    --kbin-alert-danger-border: 1px solid #f5c2c7;
+    --kbin-alert-danger-text-color: var(--kbin-danger-color);
+    --kbin-alert-danger-link-color: var(--kbin-danger-color);
+
+    /*entry*/
+    --kbin-entry-link-visited-color: #7e8f99;
+
+    /*details*/
+    --mbin-details-border: var(--kbin-section-border);
+    --mbin-details-separator-border: var(--kbin-meta-border);
+
+    --mbin-details-detail-color: var(--kbin-link-hover-color);
+    --mbin-details-spoiler-color: var(--kbin-danger-color);
+
+    --mbin-details-detail-label: "Details";
+    --mbin-details-spoiler-label: "Spoiler";
+
+}
+
+.theme--kbin {
+    --kbin-body-bg: var(--accent-background);
+
+    --kbin-bg: var(--accent-background);
+    --kbin-bg-nth: var(--accent-background);
+
+    --kbin-text-color: var(--text-primary);
+    --kbin-link-color: var(--text-themed);
+    --kbin-link-hover-color: #275878;
+    --kbin-outline: #ff8c00 solid 4px;
+
+    --kbin-primary-color: var(--accent-color-main);
+    --kbin-text-muted-color: #95a6a6;
+
+    --kbin-success-color: #0f5132;
+    --kbin-danger-color: #842029;
+
+    --kbin-own-color: #0f5132;
+    --kbin-author-color: #842029;
+
+    /*section*/
+    --kbin-section-bg: var(--accent-background);
+    --kbin-section-text-color: var(--kbin-text-color);
+    --kbin-section-title-link-color: var(--text-primary);
+    --kbin-section-link-color: var(--kbin-link-color);
+    --kbin-section-link-hover-color: var(--kbin-link-hover-color);
+    --kbin-section-border: 1px solid var(--accent-color-main);
+    --kbin-author-border: 1px dashed var(--kbin-author-color);
+    --kbin-own-border: 1px dashed var(--kbin-own-color);
+
+    /*meta*/
+    --kbin-meta-bg: none;
+    --kbin-meta-text-color: var(--text-primary);
+    --kbin-meta-link-color: var(--accent-color-main);
+    --kbin-meta-link-hover-color: var(--accent-text-hover);
+    --kbin-meta-border: 1px solid var(--accent-color-main); /*Originally: dashed*/
+    --kbin-avatar-border: 3px solid #ecf0f1;
+    --kbin-avatar-border-active: 3px solid #d3d5d6;
+    --kbin-blockquote-color: #0f5132;
+
+    /*options*/
+    --kbin-options-bg: var(--accent-background);
+    --kbin-options-text-color: var(--text-primary);
+    --kbin-options-link-color: var(--accent-color-main);
+    --kbin-options-link-hover-color: var(--accent-text-hover);
+    --kbin-options-border: 1px solid var(--accent-color-main);
+    --kbin-options-link-hover-border: 3px solid var(--accent-color-main);
+
+    /*forms*/
+    --kbin-input-bg: var(--accent-background);
+    --kbin-input-text-color: var(--kbin-text-color);
+    --kbin-input-border: 1px solid var(--accent-color-main);
+    --kbin-input-placeholder-text-color: var(--text-secondary);
+
+    /*buttons*/
+    --kbin-button-primary-bg: var(--accent-background);
+    --kbin-button-primary-hover-bg: var(--button-surface-cover);
+    --kbin-button-primary-text-color: var(--accent-color-main);
+    --kbin-button-primary-text-hover-color: var(--accent-text-hover);
+    --kbin-button-primary-border: 1px solid var(--accent-color-main);
+
+    --kbin-button-secondary-bg: var(--accent-background);
+    --kbin-button-secondary-hover-bg: var(--button-surface-cover);
+    --kbin-button-secondary-text-color: var(--kbin-meta-text-color);
+    --kbin-button-secondary-text-hover-color: var(--text-secondary);
+    --kbin-button-secondary-border: 1px solid var(--accent-color-main);
+
+    /*header*/
+    --kbin-header-bg: var(--accent-background);
+    --kbin-header-text-color: var(--accent-color-main);
+    --kbin-header-link-color: var(--accent-color-main);
+    --kbin-header-link-hover-color: var(--accent-text-hover);
+    --kbin-header-link-active-bg: var(--accent-background);
+    --kbin-header-border: 1px solid var(--accent-color-main);
+    --kbin-header-hover-border: 3px solid var(--accent-color-main);
+
+    /*sidebar*/
+    --kbin-sidebar-header-text-color: var(--accent-color-main);
+    --kbin-sidebar-header-border: 1px solid var(--accent-color-main);
+    --kbin-sidebar-settings-row-bg: var(--accent-background);
+    --kbin-sidebar-settings-switch-on-color: #fff ;
+    --kbin-sidebar-settings-switch-on-bg: var(--kbin-button-primary-bg);
+    --kbin-sidebar-settings-switch-off-color: #fff ;
+    --kbin-sidebar-settings-switch-off-bg: #b5c4c9;
+    --kbin-sidebar-settings-switch-hover-bg: #9992BC;
+
+    /*vote*/
+    --kbin-vote-bg: var(--accent-background);
+    --kbin-vote-text-color: var(--accent-color-main);
+    --kbin-vote-text-hover-color: var(--accent-text-hover);
+    --kbin-upvoted-color: #0f5132;
+    --kbin-downvoted-color: #842029;
+
+    /*boost*/
+    --kbin-boosted-color: var(--kbin-upvoted-color);
+
+    /*alerts*/
+    --kbin-alert-info-bg: #fff3cd;
+    --kbin-alert-info-border: 1px solid #ffe69c;
+    --kbin-alert-info-text-color: #997404;
+    --kbin-alert-info-link-color: #997404;
+
+    --kbin-alert-danger-bg: #f8d7da;
+    --kbin-alert-danger-border: 1px solid #f5c2c7;
+    --kbin-alert-danger-text-color: var(--kbin-danger-color);
+    --kbin-alert-danger-link-color: var(--kbin-danger-color);
+
+    /*entry*/
+    --kbin-entry-link-visited-color: #7e8f99;
+
+    /*details*/
+    --mbin-details-border: var(--kbin-section-border);
+    --mbin-details-separator-border: var(--kbin-meta-border);
+
+    --mbin-details-detail-color: var(--kbin-link-hover-color);
+    --mbin-details-spoiler-color: var(--kbin-danger-color);
+
+    --mbin-details-detail-label: "Details";
+    --mbin-details-spoiler-label: "Spoiler";
+}
+
+.vote button {
+    border: 1px solid var(--accent-color-main);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /*TTPD Theme Styles Variables*/
+        --accent-color-main: rgba(124, 114, 105, 1);
+        --accent-color-secondary: rgba(124, 114, 105, 0.9);
+        --accent-background: rgba(237, 236, 233, 1);
+        --accent-background-secondary: rgba(237, 236, 233, 0.9);
+
+        /*Text*/
+        --text-primary: rgba(0, 0, 0, 0.8956);
+        --text-secondary: rgba(0, 0, 0, 0.6063);
+        --text-on-accent-primary: rgba(255, 255, 255, 1);
+        --text-on-accent-secondary: rgba(255, 255, 255, 0.7);
+
+        --text-themed: var(--accent-color-main);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /*TTPD Theme Styles Variables*/
+        --accent-color-main: rgba(157, 148, 139, 1);
+        --accent-color-secondary: rgba(157, 148, 139, 0.9);
+        --accent-background: rgba(5, 4, 6, 1);
+        --accent-background-secondary: rgba(5, 4, 6, 0.9);
+
+        /*Text*/
+        --text-primary: rgba(255, 255, 255, 1);
+        --text-secondary: rgba(255, 255, 255, 0.786);
+        --text-on-accent-primary: rgba(0, 0, 0, 1);
+        --text-on-accent-secondary: rgba(0, 0, 0, 0.5);
+
+        --text-themed: var(--accent-color-main);
+    }
+}

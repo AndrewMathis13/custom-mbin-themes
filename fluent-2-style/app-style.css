@@ -247,7 +247,7 @@
 
 .badge {
     background: var(--accent-fill-default) !important;
-    color: var(--text-on-accent-primary);
+    color: var(--text-on-accent-primary) !important;
 }
 
 /*Automatic light/dark theme mode*/

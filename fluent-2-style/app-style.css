@@ -1,4 +1,4 @@
-/* fluent-2-style v2.1.05 */
+/* fluent-2-style v2.1.06 */
 /*https://github.com/AndrewMathis13/custom-mbin-themes*/
 
 :root {
@@ -110,7 +110,7 @@
     /*alerts*/
     --kbin-alert-success-bg: var(--system-success-background);
     --kbin-alert-success-border: 1px solid var(--card-stroke-default);
-    --kbin-alert-success-text-color: #fff;
+    --kbin-alert-success-text-color: var(--text-primary);
     --kbin-alert-success-link-color: #fff;
 
     /*Default theme variables*/
@@ -243,6 +243,11 @@
 
     --mbin-details-detail-label: "Details";
     --mbin-details-spoiler-label: "Spoiler";
+}
+
+.badge {
+    background: var(--accent-fill-default) !important;
+    color: var(--text-on-accent-primary);
 }
 
 /*Automatic light/dark theme mode*/

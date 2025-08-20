@@ -1,5 +1,5 @@
 # WE'VE MOVED TO CODEBERG
-This repository is no longer being matained here on GitHub. Feel free to find us over on Codeberg!
+This repository is no longer being maintained here on GitHub. Feel free to find us over on Codeberg!
 
 New repo: [https://codeberg.org/AndrewMathis13/custom-mbin-themes](https://codeberg.org/AndrewMathis13/custom-mbin-themes)
 
